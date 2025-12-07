@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padala Venkata Reddy | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="splash-screen" id="splashScreen">
+        <div class="moving-lines">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div class="particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+        <div class="floating-elements">
+            <div class="floating-element">ॐ</div>
+            <div class="floating-element">✸</div>
+            <div class="floating-element">✦</div>
+            <div class="floating-element">✧</div>
+            <div class="floating-element">★</div>
+        </div>
+        <div class="name-header">
+            <div class="name-text">PADALA VENKATA REDDY</div>
+        </div>
+        <div class="splash-container">
+            <div class="glass-card" id="splashCard">
+                <div class="ganesh-icon">
+                    <i class="fas fa-praying-hands"></i>
+                </div>
+                <h1 id="dynamicText">नमस्ते</h1>
+                <div class="language-subtitle" id="languageSubtitle">Hindi</div>
+                <div class="progress-container" id="progressContainer">
+                    <div class="progress-bar" id="progressBar"></div>
+                </div>
+                <div class="welcome-subtitle" id="welcomeSubtitle">To PORTFOLIO</div>
+            </div>
+            <div id="shatterOverlay"></div>
+        </div>
+    </div>
+
+    <div class="portfolio-content" id="portfolioContent" style="display: none;">
+        <div class="flutter-animation">
+            <div class="flutter-widget widget-1">📱</div>
+            <div class="flutter-widget widget-2">⚡</div>
+            <div class="flutter-widget widget-3">🎯</div>
+            <div class="flutter-widget widget-4">🚀</div>
+            <div class="flutter-widget widget-5">💎</div>
+            <div class="flutter-widget widget-6">📐</div>
+            <div class="flutter-widget widget-7">🔧</div>
+            <div class="flutter-widget widget-8">📊</div>
+            <div class="flutter-widget widget-9">🎨</div>
+            <div class="flutter-widget widget-10">⚙️</div>
+            <div class="flutter-widget widget-11">🔍</div>
+            <div class="flutter-widget widget-12">✨</div>
+        </div>
+        
+        <div id="header">
+            <div class="container">
+                <nav class="glass-nav">
+                    <img src="images/logo.png" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Internships</a></li>
+                        <li><a href="#portfolio">Projects</a></li>
+                        <li><a href="#softskills">SoftSkills</a></li>
+                        <li><a href="#achivements">Achivements</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fas fa-times" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fas fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <h1>Hi, I'm <span class="name-highlight">Venkata Reddy</span></h1>
+                    <h2><span class="flutter-text">Flutter Developer</h2>
+                    <div class="flutter-badge">
+                        <i class="fab fa-flutter"></i>
+                        <span>Dart • Material Design • Cross-Platform • Firebase</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="about">
+            <div class="container">
+                <div class="section-border-animation">
+                    <div class="border-line border-line-1"></div>
+                    <div class="border-line border-line-2"></div>
+                    <div class="border-line border-line-3"></div>
+                    <div class="border-line border-line-4"></div>
+                </div>
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/user.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>To begin my career as a Flutter Developer where I can apply my skills in Dart, UI/UX design, and cross-platform mobile app development. I aim to contribute to building high-performance, user-centric applications while continuously expanding my technical knowledge, learning from real-world projects, and growing as a valuable member of the development team.</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">SKILLS</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Programming & Data Analysis</span><br>Python, Java, C </li>
+                                <li><span>Database Management</span><br>MYSQL</li>
+                                <li><span>Data Visualization & Tools</span><br>Power BI, Excel </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>Aditya Engineering College, Surampalem, Andhra Pradesh (2023 - 2027)</span><br>Bachelor of Technology in Computer Science and Engineering</li>
+                                <li><span>Sri Chaitanya Junior College, Vijayawada, Andhra Pradesh  (2021 - 2023)</span><br>Intermediate  </li>
+                                <li><span>Sri Chaitanya EM School, Tapeswaram, Andhra Pradesh(2020 - 2021)</span><br>Secondary School</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="services">
+            <div class="container">
+                <div class="section-border-animation">
+                    <div class="border-line border-line-1"></div>
+                    <div class="border-line border-line-2"></div>
+                    <div class="border-line border-line-3"></div>
+                    <div class="border-line border-line-4"></div>
+                </div>
+                <h1 class="sub-title">My Internships</h1>
+                <div class="services-list">
+                    <div class="service-card service-card-1">
+                        <i class="fa-brands fa-flutter service-icon-1"></i>
+                        <h2>Google Flutter- Technical Hub Pvt Ltd<br>(MAY-2025 to JUN-2025)</h2>
+                        <p>• Worked on Flutter framework with Dart programming to build and manage mobile app UI.<br>• Gained hands-on experience with widgets, navigation, and material design principles. </p>
+                        <a href="images/thub google flutter 2025.pdf" download class="btn btn2 btn-color-1">Download Certificate</a>
+                    </div>
+                    <div class="service-card service-card-2">
+                        <i class="fa-brands fa-android service-icon-2"></i>
+                        <h2>Android App Development– APSSDC<br>(MAY-2025 to JUN-2025)</h2>
+                        <p>• Learned and applied core Android development concepts using Java.<br>• Developed basic mobile applications, gaining experience in UI design, activities, and API integration.</p>
+                        <a href="images/apssdc android app development 2025.pdf" download class="btn btn2 btn-color-2">Download Certificate</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="portfolio">
+            <div class="container">
+                <div class="section-border-animation">
+                    <div class="border-line border-line-1"></div>
+                    <div class="border-line border-line-2"></div>
+                    <div class="border-line border-line-3"></div>
+                    <div class="border-line border-line-4"></div>
+                </div>
+                <h1 class="sub-title">My Projects</h1>
+                <div class="work-list">
+                    <div class="work project-card-1">
+                        <img src="images/quickfix.png">
+                        <div class="layer">
+                            <h3>QuickFix App</h3>
+                            <p>Nearby Services app like(plumber,painter,carpenter,etc...)<br>click here for more details</p>
+                            <a href="https://github.com/VenkataReddy2908/Quick-Fix"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="work project-card-2">
+                        <img src="images/aptora.png">
+                        <div class="layer">
+                            <h3>Aptora</h3>
+                            <p>Learning Aptitude, Reasoning, verbal, Communications<br>click here for more details</p>
+                            <a href="https://github.com/VenkataReddy2908/apttora"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="work project-card-2">
+                        <img src="images/finance website.png">
+                        <div class="layer">
+                            <h3>Finance Website</h3>
+                            <p>Business mans can put hteir accounts<br>click here for more details</p>
+                            <a href="https://venkatareddy2908.github.io/finance-website/"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://github.com/VenkataReddy2908" class="btn btn-color-3">See more</a>
+            </div>
+        </div>
+        
+        <div id="softskills">
+            <div class="container">
+                <div class="section-border-animation">
+                    <div class="border-line border-line-1"></div>
+                    <div class="border-line border-line-2"></div>
+                    <div class="border-line border-line-3"></div>
+                    <div class="border-line border-line-4"></div>
+                </div>
+                <h1 class="sub-title">Soft Skills</h1>
+                <div class="skills-container">
+                    <div class="skill-card softskill-card-1">
+                        <div class="skill-icon skill-icon-1">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3>Problem Solving & Analytical Thinking</h3>
+                        <p>Ability to analyze complex problems and develop effective solutions through logical reasoning and critical thinking.</p>
+                    </div>
+                    <div class="skill-card softskill-card-2">
+                        <div class="skill-icon skill-icon-2">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h3>Effective Communication</h3>
+                        <p>Strong verbal and written communication skills to clearly convey ideas and collaborate effectively with team members.</p>
+                    </div>
+                    <div class="skill-card softskill-card-3">
+                        <div class="skill-icon skill-icon-3">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3>Attention to Detail</h3>
+                        <p>Meticulous approach to work ensuring accuracy and quality in all tasks and deliverables.</p>
+                    </div>
+                    <div class="skill-card softskill-card-4">
+                        <div class="skill-icon skill-icon-4">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3>Time Management</h3>
+                        <p>Efficiently prioritizing tasks and managing deadlines to ensure timely completion of projects.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="achivements">
+            <div class="container">
+                <div class="section-border-animation">
+                    <div class="border-line border-line-1"></div>
+                    <div class="border-line border-line-2"></div>
+                    <div class="border-line border-line-3"></div>
+                    <div class="border-line border-line-4"></div>
+                </div>
+                <h1 class="sub-title">Achievements</h1>
+                <div class="achievement-list">
+                    <div class="achievement-item achievement-card-1">
+                        <div class="achievement-icon achievement-icon-1">
+                            <i class="fab fa-js-square"></i>
+                        </div>
+                        <div class="achievement-content">
+                            <h3>JavaScript - Infosys Springboard</h3>
+                            <p>Completed comprehensive JavaScript training program covering modern ES6+ features, DOM manipulation, and asynchronous programming.</p>
+                            <a href="images/javascript-certificate.pdf" download class="btn btn2 achievement-btn btn-color-4">Download Certificate</a>
+                        </div>
+                    </div>
+                    <div class="achievement-item achievement-card-2">
+                        <div class="achievement-icon achievement-icon-2">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="achievement-content">
+                            <h3>Front End Web Developer - Infosys Springboard</h3>
+                            <p>Successfully completed front-end web development training with focus on HTML5, CSS3, responsive design, and modern web development practices.</p>
+                            <a href="images/frontend-certificate.pdf" download class="btn btn2 achievement-btn btn-color-5">Download Certificate</a>
+                        </div>
+                    </div>
+                    <div class="achievement-item achievement-card-3">
+                        <div class="achievement-icon achievement-icon-3">
+                            <i class="fab fa-java"></i>
+                        </div>
+                        <div class="achievement-content">
+                            <h3>Programming in Java – Oracle</h3>
+                            <p>Earned Oracle certification in Java programming, demonstrating proficiency in object-oriented programming concepts and Java development.</p>
+                            <a href="images/java-certificate.pdf" download class="btn btn2 achievement-btn btn-color-6">Download Certificate</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="contact">
+            <div class="container">
+                <div class="section-border-animation">
+                    <div class="border-line border-line-1"></div>
+                    <div class="border-line border-line-2"></div>
+                    <div class="border-line border-line-3"></div>
+                    <div class="border-line border-line-4"></div>
+                </div>
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fas fa-paper-plane contact-icon-1"></i>padalavenkatareddy2006@gmail.com</p>
+                        <p><i class="fa-solid fa-phone contact-icon-2"></i>9533964433</p>
+                        <div class="social-icons">
+                            <a href="https://github.com/VenkataReddy2908"><i class="fa-brands fa-github social-icon-1"></i></a>
+                            <a href="https://www.facebook.com/share/1ACFQWreky/"><i class="fab fa-facebook social-icon-2"></i></a>
+                            <a href="https://x.com/VenkataRed3011?s=09"><i class="fab fa-twitter-square social-icon-3"></i></a>
+                            <a href="https://www.instagram.com/venkata_reddy_18/"><i class="fab fa-instagram social-icon-4"></i></a>
+                            <a href="https://www.linkedin.com/in/padala-venkata-reddy-425458236/"><i class="fab fa-linkedin social-icon-5"></i></a>
+                        </div>
+                        <a href="images/VenkatResume.pdf" download class="btn btn2 btn-color-7">Download Resume</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet" class="contact-form">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="tel" name="Mobile" placeholder="Your Mobile Number" maxlength="10" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2 btn-color-8">
+                                <span class="submit-text">Submit</span>
+                            </button>
+                        </form>
+                        <div id="msg" class="message-container">
+                            <div class="success-msg">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Message sent successfully!</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © 2025 Venkata Reddy. All rights reserved</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="fullscreen-loader" class="fullscreen-loader">
+        <div class="loader-content">
+            <div class="loader-icon">
+                <i class="fas fa-hourglass-half"></i>
+            </div>
+            <div class="loader-text">Sending...</div>
+        </div>
+    </div>
+
+    <div id="success-overlay" class="success-overlay">
+        <div class="success-content">
+            <div class="success-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <div class="success-text">Message Sent Successfully!</div>
+            <div class="success-subtext">Thank you for contacting me. I'll get back to you soon.</div>
+            <button class="success-close-btn" id="successCloseBtn">OK</button>
+        </div>
+    </div>
+
+    <script>
+        const greetings = [
+            { text: "नमस्ते", lang: "Hindi" },
+            { text: "नमस्कार", lang: "Sanskrit" },
+            { text: "வணக்கம்", lang: "Tamil" },
+            { text: "నమస్కారం", lang: "Telugu" },
+            { text: "नमস্কार", lang: "Bengali" },
+            { text: "ନମସ୍କାର", lang: "Odia" },
+            { text: "નમસ્કાર", lang: "Gujarati" },
+            { text: "नमस्कार", lang: "Marathi" },
+            { text: "नमस्कार", lang: "Kannada" },
+            { text: "നമസ്കാരം", lang: "Malayalam" },
+            { text: "ਸਤਿ ਸ੍ਰੀ ਅਕਾਲ", lang: "Punjabi" },
+            { text: "नमস্কাৰ", lang: "Assamese" },
+            { text: "প্রণাম", lang: "Maithili" },
+            { text: "नमस्कार", lang: "Konkani" },
+            { text: "नमस्ते", lang: "Nepali" },
+            { text: "आदाബ", lang: "Sindhi" },
+            { text: "नमस्कार", lang: "Kashmiri" },
+            { text: "खुरुमजारি", lang: "Manipuri" },
+            { text: "ᱥᱟᱜᱩᱱ ᱥᱮᱛᱟᱜ", lang: "Santhali" },
+            { text: "ফিফাই", lang: "Bodo" },
+            { text: "नमस्ते", lang: "Dogri" },
+            { text: "السلام علیکم", lang: "Urdu" },
+            { text: "Hello", lang:"English"},
+        ];
+
+        const textElement = document.getElementById('dynamicText');
+        const languageElement = document.getElementById('languageSubtitle');
+        const progressBar = document.getElementById('progressBar');
+        const progressContainer = document.getElementById('progressContainer');
+        const welcomeSubtitle = document.getElementById('welcomeSubtitle');
+        const splashScreen = document.getElementById('splashScreen');
+        const portfolioContent = document.getElementById('portfolioContent');
+        const glassCard = document.getElementById('splashCard');
+        const particlesContainer = document.querySelector('.particles');
+        const nameHeader = document.querySelector('.name-header');
+        const fullscreenLoader = document.getElementById('fullscreen-loader');
+        const successOverlay = document.getElementById('success-overlay');
+        const successCloseBtn = document.getElementById('successCloseBtn');
+        
+        let index = 0;
+        const totalGreetings = greetings.length;
+        const intervalTime = 150;
+        
+        welcomeSubtitle.style.opacity = '0';
+        progressContainer.style.opacity = '1';
+
+        function updateGreeting() {
+            if (index < totalGreetings) {
+                progressBar.style.transition = 'width 0.3s ease-out'; 
+                textElement.style.opacity = '0';
+                languageElement.style.opacity = '0';
+                
+                setTimeout(() => {
+                    textElement.textContent = greetings[index].text;
+                    languageElement.textContent = greetings[index].lang;
+                    textElement.style.opacity = '1';
+                    languageElement.style.opacity = '0.8';
+                    
+                    const progress = ((index + 1) / totalGreetings) * 100;
+                    progressBar.style.width = `${progress}%`;
+                    index++;
+                    
+                    if (index >= totalGreetings) {
+                        setTimeout(showWelcomeMessage, 200);
+                    } else {
+                        setTimeout(updateGreeting, intervalTime);
+                    }
+                }, 150);
+            }
+        }
+
+        function showWelcomeMessage() {
+            textElement.style.opacity = '0';
+            languageElement.style.opacity = '0';
+            progressContainer.style.opacity = '0';
+            
+            setTimeout(() => {
+                languageElement.style.display = 'none';
+                progressContainer.style.display = 'none';
+                textElement.textContent = 'WELCOME';
+                textElement.classList.add('welcome-final');
+                textElement.style.opacity = '1';
+                
+                setTimeout(() => {
+                    welcomeSubtitle.style.opacity = '1';
+                    welcomeSubtitle.style.transform = 'translateY(0)';
+                    glassCard.style.padding = '70px 80px';
+                    glassCard.style.minWidth = '550px';
+                    glassCard.style.boxShadow = 
+                        '0 35px 70px -15px rgba(0, 0, 0, 0.8), inset 0 1px 0 rgba(255, 255, 255, 0.2)';
+                    
+                    setTimeout(initiateGlassBreak, 1500);
+                }, 300);
+            }, 300);
+        }
+
+        function createShatterPieces(card) {
+            const fragments = [];
+            const clone = card.cloneNode(true);
+            const cardRect = card.getBoundingClientRect();
+            
+            card.style.opacity = '0';
+            card.style.border = 'none';
+            card.style.boxShadow = 'none';
+            
+            for (let i = 1; i <= 4; i++) {
+                const piece = document.createElement('div');
+                piece.className = `shatter-piece shatter-piece-${i}`;
+                piece.style.position = 'fixed';
+                piece.style.top = `${cardRect.top}px`;
+                piece.style.left = `${cardRect.left}px`;
+                piece.style.width = `${cardRect.width}px`;
+                piece.style.height = `${cardRect.height}px`;
+                
+                const pieceContent = clone.cloneNode(true);
+                pieceContent.style.position = 'absolute';
+                pieceContent.style.top = '0';
+                pieceContent.style.left = '0';
+                pieceContent.style.margin = '0';
+                pieceContent.style.transform = 'none'; 
+                pieceContent.style.transition = 'none';
+                pieceContent.style.backdropFilter = card.style.backdropFilter;
+                pieceContent.style.webkitBackdropFilter = card.style.webkitBackdropFilter;
+                pieceContent.style.background = card.style.background;
+                pieceContent.style.border = card.style.border;
+                pieceContent.style.borderRadius = card.style.borderRadius;
+                pieceContent.style.boxShadow = card.style.boxShadow;
+                pieceContent.style.overflow = 'hidden';
+                pieceContent.querySelector('.ganesh-icon').style.opacity = '1';
+                pieceContent.querySelector('#dynamicText').style.opacity = '1'; 
+                
+                piece.appendChild(pieceContent);
+                document.body.appendChild(piece);
+                fragments.push(piece);
+            }
+            
+            setTimeout(() => {
+                fragments[0].classList.add('shatter-piece-1-animate');
+                fragments[1].classList.add('shatter-piece-2-animate');
+                fragments[2].classList.add('shatter-piece-3-animate');
+                fragments[3].classList.add('shatter-piece-4-animate');
+            }, 10);
+            
+            return fragments;
+        }
+
+        function initiateGlassBreak() {
+            nameHeader.style.opacity = '0';
+            particlesContainer.style.opacity = '0';
+            particlesContainer.style.transition = 'opacity 0.5s ease-out';
+            
+            const shatterPieces = createShatterPieces(glassCard);
+            
+            setTimeout(() => {
+                splashScreen.style.display = 'none';
+                portfolioContent.style.display = 'block';
+                document.body.style.overflow = 'auto';
+                
+                shatterPieces.forEach(p => p.remove());
+                
+                setTimeout(() => {
+                    document.body.scrollIntoView({ behavior: 'smooth' });
+                }, 100);
+            }, 700);
+        }
+
+        setTimeout(updateGreeting, 200);
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(let t of tablinks){ t.classList.remove("active-link"); }
+            for(let c of tabcontents){ c.classList.remove("active-tab"); }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() { 
+            sidemenu.style.right = "0"; 
+        }
+        function closemenu() { 
+            sidemenu.style.right = "-220px"; 
+        }
+        document.querySelectorAll('nav ul li a').forEach(item => {
+            item.addEventListener('click', () => {
+                if (window.innerWidth <= 600) {
+                    closemenu();
+                }
+            });
+        });
+
+        window.addEventListener('load', function() {
+            updateActiveNav();
+        });
+        
+        window.addEventListener('scroll', function() {
+            updateActiveNav();
+        });
+        
+        function updateActiveNav() {
+            const sections = document.querySelectorAll('#header, #about, #services, #portfolio, #softskills, #achivements, #contact');
+            const navLinks = document.querySelectorAll('nav ul li a');
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').substring(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+        }
+
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbweIhGLmGsxUFYq7f4nwlAPi-yHmaiI6nIlRON5gjg1ikWhTGHWjdCQCAXvlrBcL21C/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+        const submitBtn = document.querySelector('.btn.btn2')
+        const submitText = document.querySelector('.submit-text')
+        
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            
+            fullscreenLoader.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+            
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                setTimeout(() => {
+                    fullscreenLoader.style.display = 'none';
+                    
+                    successOverlay.style.display = 'flex';
+                    
+                    form.reset()
+                }, 500)
+            })
+            .catch(error => {
+                console.error('Error!', error.message)
+                fullscreenLoader.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            })
+        })
+
+        successCloseBtn.addEventListener('click', () => {
+            successOverlay.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        })
+
+        successOverlay.addEventListener('click', (e) => {
+            if (e.target === successOverlay) {
+                successOverlay.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        })
+    </script>
+</body>
+</html>
